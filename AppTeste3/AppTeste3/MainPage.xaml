@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppTeste3"
+             x:Class="AppTeste3.MainPage">
+    <!--
+    <StackLayout>
+        <DatePicker VerticalOptions="CenterAndExpand" />
+    </StackLayout>
+    -->
+    
+    <!--
+    <StackLayout>
+        <DatePicker MinimunDate="01/01/2010" MaximunDate="01/01/2020" Format="dd/MM/yyyy" />
+    </StackLayout>
+    -->
+    
+    <!--
+    <StackLayout>
+        <TimePicker Format="HH:mm" />
+    </StackLayout>
+    -->
+    
+    <!--
+    <StackLayout>
+        <Picker VerticalOptions="Center" HorizontalOptions="Fill" Title="Escolha">
+            <Picker.Items>
+                <x:String>Opcao 1</x:String>
+                <x:String>Opcao 2</x:String>
+                <x:String>Opcao 3</x:String>
+            </Picker.Items>
+        </Picker>
+    </StackLayout>
+    -->
+
+    <ScrollView>
+        <StackLayout Spacing="0" Padding="0" BackgroundColor="Violet">
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="100" VerticalOptions="Start" Color="Gray" />
+            <Button BorderRadius="30" HeightRequest="60" WidthRequest="60" BackgroundColor="Red" HorizontalOptions="Center" VerticalOptions="Start" />
+            <StackLayout HeightRequest="100" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Spacing="20" BackgroundColor="Violet">
+                <Label Text="USUÁRIO" FontSize="28" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" />
+                <Entry Text="Biografia" TextColor="White" BackgroundColor="Violet" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
+                <StackLayout Spacing="0" BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="Start">
+                    <BoxView BackgroundColor="Black" WidthRequest="40" HeightRequest="40" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
+                    <Label FontSize="14" TextColor="Black" Text="Cor de Texto" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
+                </StackLayout>
+                <StackLayout Spacing="0" BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                    <BoxView BackgroundColor="Violet" WidthRequest="40" HeightRequest="40" HorizontalOptions="Start" VerticalOptions="Center" />
+                    <Label FontSize="14" TextColor="Black" Text="Cor de Fundo" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label FontSize="14" Text="Idade" TextColor="White" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100" />
+                <Entry HorizontalOptions="FillAndExpand" Text="35" TextColor="White" BackgroundColor="Violet" Keyboard="Numeric" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label FontSize="14" Text="Interesses" TextColor="White" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100" />
+                <Entry HorizontalOptions="FillAndExpand" Text="Xamarin.Forms" TextColor="White" BackgroundColor="Violet" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label FontSize="14" Text="Tecnologias" TextColor="White" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100" />
+                <Entry HorizontalOptions="FillAndExpand" Text="JavaScript, C#, .NET" TextColor="White" BackgroundColor="Violet" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
